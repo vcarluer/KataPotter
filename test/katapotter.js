@@ -24,6 +24,29 @@ describe('katapotter', function() {
         expect(b.getCount()).to.equal(2)
     })
     
+    it ('price for 2 different books', function() {
+        var b = basket.create()
+        b.add('Harry 1')
+        b.add('Harry 2')
+        expect(b.getTotalPrice()).to.equal(8*2*0.90)
+    })
+    
+    it ('price for 2 same books', function() {
+        var b = basket.create()
+        b.add('Harry 1')
+        b.add('Harry 1')
+        expect(b.getTotalPrice()).to.equal(8*2)
+    })
+    
+    it ('gives the price for 3 differents books', function() {
+        var b = basket.create()
+        b.add('Harry 1')
+        b.add('Harry 2')
+        b.add('Harry 3')
+        expect(b.getTotalPrice()).to.equal(8*3*0.85)
+    })
+    
+    
 })
 
 /* expect(foo).to.be.a('string');
