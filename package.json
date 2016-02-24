@@ -1,0 +1,24 @@
+{
+  "name": "katapotter",
+  "version": "1.0.0",
+  "description": "Kata Potter - coding dojo #1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcarluer/KataPotter.git"
+  },
+  "author": "ortems coding dojo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vcarluer/KataPotter/issues"
+  },
+  "homepage": "https://github.com/vcarluer/KataPotter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  }
+}
